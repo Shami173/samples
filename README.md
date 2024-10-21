@@ -1,26 +1,15 @@
-# Samples
+# simple-java-maven-app
 
-This repository contains sample code in order for developers to reproduce complex examples shared on https://inside.java or https://dev.java.
+This repository is for the
+[Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
+tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
 
-## Installation
+The repository contains a simple Java application which outputs the string
+"Hello world!" and is accompanied by a couple of unit tests to check that the
+main application works as expected. The results of these tests are saved to a
+JUnit XML report.
 
-Each sample directory contains its own instructions (SETUP.md) on how to run the example(s).
-
-## Content
-
-* [CountDownProblem.java](countdown-problem-java21/CountDownProblem.java) published on https://inside.java/2023/11/03/countdown-haskell-java 
-
-
-## Feedback
-
-If you spot an error, or you know of an alternative way/an extra question/solution that you can offer, please raise an issue on https://github.com/java/devrel.
-
-## Security
-
-Please consult the [security guide](./SECURITY.md) for our responsible security vulnerability disclosure process
-
-## License
-
-Copyright (c) 2023 Oracle and/or its affiliates.
-Released under the Universal Permissive License v1.0 as shown at
-<https://oss.oracle.com/licenses/upl/>.
+The `jenkins` directory contains an example of the `Jenkinsfile` (i.e. Pipeline)
+you'll be creating yourself during the tutorial and the `jenkins/scripts` subdirectory
+contains a shell script with commands that are executed when Jenkins processes
+the "Deliver" stage of your Pipeline.
